@@ -4,6 +4,12 @@
     box-sizing: border-box;
     font-family: 'outfit';
     -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    -webkit-user-drag: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 body {
@@ -40,7 +46,7 @@ header{
     gap: 10px;
 }
 
-.title_icon .bi-envelope-open-fill{
+.title_icon .bi-file-earmark-text-fill{
     font-size: 28px;
 }
 

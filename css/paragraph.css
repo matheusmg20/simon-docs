@@ -24,6 +24,7 @@
 
 .content img{
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .code {
@@ -64,10 +65,22 @@ button.sound{
     background-color: #6f37b9;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #title_section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+hr{
+    height: 1px;
+    width: 90%;
+    border: solid 1px #3f3f3f;
+    margin-bottom: 20px;
+}
+
+#section1{
+    scroll-margin-top: 140px; /* altura do header */
 }
