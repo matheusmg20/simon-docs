@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apps" />
+    <link rel="shortcut icon" href=".svg" type="svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paragraph.css">
+    <title>SiMOn Docs</title>
+</head>
+<body> 
+    <header>
+        <div class="title">
+            <i class="bi bi-list" id="menu-toggle"></i>
+            <div class="title_icon">
+                <i class="bi bi-envelope-open-fill"></i>
+                <h1 class="title_simon">SiMOn <span id="name_title">Docs</span></h1>
+            </div>
+        </div>
+        <div class="rigth">
+            <div class="search">
+                <input type="text" placeholder="Pesquise por algum item"/>
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="notification">
+                <i class="bi bi-bell"></i>
+                <span id="new-notification">.</span>
+            </div>
+            <div class="apps">
+                <span class="material-symbols-outlined">apps</span>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="overlay" id="overlay"></div>
+        <aside class="sidebar" id="sidebar">
+            <div class="search">
+                <input type="text" placeholder="Pesquise por algum item"/>
+                <i class="bi bi-search"></i>
+            </div>
+            <ul>
+                <li><a href="#section1" class="ativo"><h4>1.</h4><span>Sobre o SiMOn</span></a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <section id="section1">
+                <div id="title_section">
+                    <h1>O que é SiMOn?</h1>
+                    <button id="sound1" class="sound" type="button" aria-hidden="true"><i class="bi bi-volume-up-fill"></i> Ouvir narração</button>
+                </div>
+                <p>
+                    O SiMOn (Sistema de Monitoramento Online) é uma plataforma corporativa desenvolvida para acompanhar, processar e analisar dados de produção no ambiente industrial da Grendene. 
+                    Ele centraliza informações provenientes de máquinas, apontamentos dos operadores e registros automatizados, oferecendo uma leitura clara e confiável do desempenho fabril. 
+                    Sua arquitetura foi pensada para garantir rapidez, precisão e padronização, permitindo que cada etapa da operação seja monitorada com transparência.
+                </p>
+                <p>
+                    O propósito central do SiMOn é transformar dados brutos — muitas vezes dispersos entre equipes, apontamentos manuais e sistemas paralelos — em indicadores estruturados e totalmente rastreáveis. 
+                    Ao consolidar essas informações, o sistema se torna um único ponto de verdade para a gestão industrial, possibilitando decisões rápidas, embasadas e alinhadas com as metas estratégicas da organização.
+                </p>
+                <p>
+                    Atualmente, o SiMOn é responsável pelo cálculo automático do OEE (Overall Equipment Effectiveness) em diferentes níveis: por equipamento, por turno, por setor e por fábrica. 
+                    O sistema registra eventos como paradas, setups, perdas de qualidade, perdas de velocidade e demais variáveis que influenciam o desempenho operacional. 
+                    Além disso, monitora em tempo real, permitindo a rápida identificação de desvios e oportunidades de correção.
+                </p>
+                <p>
+                    Os usuários do SiMOn abrangem um amplo espectro dentro da fábrica: operadores, líderes de linha, supervisores, PCP, engenharia, áreas de apoio entre outras equipes. 
+                    Cada perfil visualiza apenas o necessário ao seu trabalho, garantindo foco e eficiência. 
+                    Para o operador, o sistema facilita o apontamento e acompanhamento do dia a dia; para gestores, oferece painéis consolidados, históricos, comparativos e análises de causa raiz.
+                </p>
+                <p>
+                    Funcionalmente, o SiMOn oferece módulos dedicados ao acompanhamento da produção, registro de paradas, análise de OEE, visualização de tendências, relatórios operacionais, dashboards, controle de metas e acompanhamento de perdas. 
+                    Sua interface promove a padronização operacional e reduz significativamente erros e retrabalhos, já que todas as informações permanecem integradas e seguem o mesmo modelo de leitura e processamento.
+                </p>
+                <p>
+                    Com sua ampla capacidade de monitoramento e estrutura organizada, o SiMOn se consolida como uma ferramenta indispensável para a gestão fabril moderna. 
+                    Ele não apenas registra dados, mas gera inteligência operacional — sendo o alicerce para projetos de melhoria contínua, planejamento estratégico, digitalização da fábrica e evolução para soluções com IA, analytics e automação avançada.
+                </p>
+                <h1>Como analisar os dados do SiMOn?</h1>
+                <p>
+                    A análise dos dados do SiMOn é realizada principalmente por meio do sistema Elipse, 
+                    plataforma utilizada para consulta, extração e monitoramento das informações registradas em tempo real. 
+                    O Elipse permite que usuários baixem relatórios em formato CSV contendo todos os eventos, 
+                    apontamentos e indicadores coletados pelo SiMOn ao longo da operação, oferecendo total rastreabilidade dos dados.
+                </p>
+                <p>
+                    Esses relatórios em CSV são essenciais para análises detalhadas, pois fornecem a visão bruta dos registros, 
+                    permitindo a construção de gráficos, dashboards e estudos personalizados. 
+                    O operador ou analista pode filtrar informações por equipamento, linha, turno, datas, motivos de paradas, setups, 
+                    tempo produtivo, tempo improdutivo e diversos outros parâmetros importantes para o entendimento da performance diária.
+                </p>
+                <p>
+                    Dentro da análise dos dados, um dos indicadores mais relevantes é o OEE (Overall Equipment Effectiveness). 
+                    Ele é utilizado para medir a eficiência real de um processo produtivo, levando em consideração todas as perdas que 
+                    afetam o desempenho da fábrica. No SiMOn, o OEE é calculado automaticamente com base nos eventos registrados pelos operadores 
+                    e pelos equipamentos.
+                </p>
+                <p>
+                    O cálculo do OEE no SiMOn segue a fórmula:
+                    <p class="code">
+                        % OEE = 100% - (Perdas de Disponibilidade + Perdas de Performance + Perdas de Qualidade)
+                    </p>
+                </p>
+                <p>
+                    Esse método torna o indicador mais intuitivo ao mostrar imediatamente o quanto a produção está perdendo em cada dimensão. 
+                    As perdas de disponibilidade representam o tempo em que o equipamento deveria estar produzindo, mas não esteve; 
+                    as perdas de qualidade consideram produtos rejeitados ou retrabalhos; 
+                    e as perdas de performance refletem a velocidade real da produção comparada ao ritmo ideal.
+                </p>
+                <p>
+                    A partir dessa estrutura, o SiMOn permite que equipes identifiquem com precisão onde estão as principais perdas, 
+                    qual equipamento ou setor sofre maior impacto e quais ações corretivas podem gerar melhor resultado. 
+                    Combinando a extração de dados via Elipse com o entendimento do OEE, a análise se torna completa, confiável e totalmente orientada à melhoria contínua.
+                </p>
+                <h1>Disponibilidade</h1>
+                <p>
+                    No contexto do SiMOn, <strong>disponibilidade</strong> é tratada como o tempo <em>perdido</em> em que a máquina não esteve disponível para produzir devido a paradas que impactam a operação. 
+                    Em outras palavras, aqui a disponibilidade representa as interrupções relevantes — ou seja, os períodos em que a máquina deveria estar produzindo, mas não estava.
+                </p>
+                <p>
+                    As paradas são classificadas em <strong>Sem Peso</strong> (programadas) e <strong>Com Peso </strong>(não programadas). 
+                    As <strong>paradas programadas</strong> (por exemplo, <em>parada para refeição</em> ou <em>pausa para descanso</em>) não têm peso no cálculo do OEE e não são contabilizadas como perdas. 
+                    Já as <strong>paradas não programadas</strong> são interrupções inesperadas ou problemas na linha de produção que possuem peso e entram no cálculo das perdas de disponibilidade.
+                </p>
+                <p>
+                    As paradas que compõem as perdas de disponibilidade são organizadas por <strong>famílias</strong>, para facilitar análise e priorização das ações. 
+                    Exemplos de categorias comuns:
+                    <ul>
+                        <li><strong>Produção:</strong> falhas operacionais ou interrupções no fluxo produtivo.</li>
+                        <li><strong>Setups:</strong> trocas de modelo, ajustes e regulagens que interrompem a produção.</li>
+                        <li><strong>Manutenção:</strong> falhas mecânicas, elétricas ou intervenções corretivas.</li>
+                        <li><strong>Matrizaria:</strong> problemas relacionados a moldes e peças de ferramentaria.</li>
+                        <li><strong>Tingimento:</strong> falhas ou paradas específicas do processo de tingimento.</li>
+                    </ul>
+                    Essa classificação permite identificar rapidamente quais tipos de evento mais consomem o tempo útil da operação.
+                </p>
+                <p>
+                    O cálculo do percentual de <strong>perdas de disponibilidade</strong> considera apenas as paradas com peso (paradas não programadas). 
+                    Para isso soma-se o tempo dessas paradas e divide-se pelo <strong>tempo útil</strong>, que é o total de tempo em que a máquina estava prevista para produzir (ou seja, já desconsiderando as paradas programadas).
+                    <p class="code">
+                        % Disponibilidade = (Somatório das Paradas com Peso ÷ Tempo Útil) × 100
+                    </p>
+                </p>
+                <p class="alert">
+                    Observação: como o SiMOn trata a disponibilidade pela ótica das perdas, esse percentual mostra diretamente quanto do tempo útil foi consumido por interrupções relevantes — informação essencial para priorizar melhorias e reduzir o impacto no OEE.
+                </p>
+                <h1>Performance</h1>
+                <p>
+                    A performance representa o quanto a máquina ou linha de produção operou na velocidade correta em relação ao ciclo padrão estabelecido pela engenharia. 
+                    No SiMOn, a performance é composta por três fatores principais: <strong>ganho de ciclo</strong>, <strong>perda de ciclo</strong> e 
+                    <strong>perdas por quadrados vazios ou moldes isolados</strong>. Esses elementos refletem diretamente a velocidade real de operação e sua aderência ao ritmo ideal.
+                </p>
+
+                <p>
+                    O <strong>ciclo</strong> corresponde ao tempo padrão que uma esteira ou máquina injetora deve levar para completar uma unidade de produção. 
+                    Quando a máquina opera mais rápido que o ciclo padrão, ocorre o chamado <strong>ganho de ciclo</strong>, representando aumento de velocidade em relação ao esperado. 
+                    Quando a operação está mais lenta do que o padrão, ocorre a <strong>perda de ciclo</strong>. Ambos são contabilizados para medir o desempenho da operação.
+                </p>
+
+                <p>
+                    Além disso, algumas máquinas possuem perdas específicas relacionadas ao fluxo produtivo. 
+                    Em <strong>máquinas injetoras rotativas</strong>, temos os <strong>moldes isolados</strong>, que são posições do carrossel onde, por algum motivo, não há montagem, injeção ou alimentação. 
+                    Já nas <strong>esteiras de montagem</strong>, temos os <strong>quadrados vazios</strong>, que representam espaços onde deveria haver um par de solados, mas o operador deixa passar vazio. 
+                    Em ambos os casos, contabiliza-se um ciclo referente àquele tempo perdido, classificando-o como perda de performance.
+                </p>
+
+                <p>
+                    Dessa forma, o cálculo da performance considera a soma das variações de velocidade (ganhos e perdas de ciclo) e das perdas por quadrados vazios ou moldes isolados. 
+                    Para cálculo do <strong>% de Performance</strong>, utilizamos o tempo útil — ou seja, o tempo realmente disponível de produção.
+                </p>
+
+                <p>
+                    A regra geral é somar todo o impacto (ganho + perdas) e dividir pelo tempo útil.
+                </p>
+                <p class="code">
+                    % Performance = ((Ganho de Ciclo + Perda de Ciclo + Perdas por Quadrado Vazio ou Molde Isolado) ÷ Tempo Útil) × 100
+                </p>
+
+                <p>
+                    Essa lógica garante que a performance reflita, de maneira equilibrada, tanto as perdas causadas por lentidão e inconsistências do operador, 
+                    quanto os ganhos reais de velocidade, mostrando com precisão o quanto a linha operou acima ou abaixo do potencial ideal definido pela engenharia.
+                </p>
+
+                <p class="alert">
+                    Observação: Esse cálculo deve ser realizado desde que o ganho de ciclo seja um valor negativo, caso o mesmo esteja como positivo, 
+                    deve-se ou inverter seu sinal multiplicando por -1 ou subtrair o ganho da soma das duas perdas.
+                </p>
+
+                <h1>Qualidade</h1>
+            </section>
+
+            <section>
+
+            </section>
+            <section>
+
+            </section>
+            <section>
+
+            </section>
+            <section>
+
+            </section>
+        </div>
+    </div>
+
+    <script src="./js/toggle_menu.js"></script>
+    <script src="./js/item_ativo.js"></script>
+    <script src="./js/responsive_sidebar.js"></script>
+    <script src="./js/narracao.js"></script>
+</body>
+</html>

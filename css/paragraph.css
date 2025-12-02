@@ -1,0 +1,73 @@
+.content{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+    margin-bottom: 50px;
+    color: #DCDCDC;
+    user-select: auto;
+}
+
+.content section{
+    width: 80%;
+}
+
+.content h1{
+    margin-bottom: 10px;
+}
+
+.content p{
+    margin-bottom: 20px;
+    line-height: 1.6rem;
+}
+
+.content img{
+    width: 100%;
+}
+
+.code {
+  /* Fundo escuro (pode usar o preto sutil que discutimos) */
+  background-color: #3f3f3f; 
+  /* Cor do texto suave (o cinza suave que discutimos) */
+  color: #DCDCDC; 
+  padding: 25px 15px;
+  border-radius: 5px; /* Bordas arredondadas */
+  overflow-x: auto; /* Permite scroll horizontal para linhas longas */
+  margin-bottom: 20px;
+  text-align: center;
+  border: solid 1px #585858;
+}
+
+.content ul{
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.content ul li{
+    line-height: 1.6rem;
+}
+
+p.alert{
+    padding: 15px;
+    text-align: center;
+    background-color: #5C2828;
+    border-radius: 5px;
+    border: solid 1px #FF7272;
+    color: #DCDCDC;
+}
+
+button.sound{
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: #6f37b9;
+    color: white;
+    border-radius: 10px;
+}
+
+#title_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
