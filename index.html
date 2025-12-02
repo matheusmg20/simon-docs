@@ -42,7 +42,8 @@
             </div>
             <ul>
                 <li><a href="#section1" class="ativo"><h4>1.</h4><span>Sobre o SiMOn</span></a></li>
-                <li><a href="#section2" class="ativo"><h4>2.</h4><span>Arquitetura</span></a></li>
+                <li><a href="#section2" class="ativo"><h4>2.</h4><span>Elipse</span></a></li>
+                <li><a href="#section3" class="ativo"><h4>3.</h4><span>Arquitetura</span></a></li>
             </ul>
         </aside>
 
@@ -192,13 +193,76 @@
                 </p>
 
                 <h1>Qualidade</h1>
-
                 <p>
-                    
+                    O pilar de Qualidade no indicador OEE (Overall Equipment Effectiveness) mede a proporção de produtos que atendem plenamente aos padrões especificados, 
+                    em relação ao total produzido. Ele reflete diretamente a capacidade do processo de gerar itens conformes sem retrabalho, refugos ou ajustes.
+                </p>
+                <p>
+                    O pilar também é divido entre itens com peso e sem peso, sendo os com peso, que impactam no valor do oee, os itens sem peso são aqueles que foram identificados no processo mas que foram retrabalhados antes de passar pelo processo de transformação.
+                </p>
+                <p>
+                    Para calcular o percentual de perdas de qualidade, usamos o seguinte cálculo:
+                </p>
+                <p class="code">
+                    % Qualidade = (Tempo de perda de qualidade ÷ Tempo Útil) × 100
+                </p>
+                <p>
+                    Para se chegar ao tempo da qualidade é necessário:
+                </p>
+                <p class="code">
+                    Tempo de perda de qualidade = (valor × ciclo) ÷ pares batidos
+                </p>
+                <p class="alert">
+                    O tempo de ciclo varia entre cada produto, ou seja, o tempo de perda de um par em um produto pode não ser o mesmo de um produto de outra marca ou modelo.
                 </p>
             </section>
             <hr>
             <section id="section2">
+                <div id="title_section">
+                    <h1>SiMOn Elipse</h1>
+                    <button id="sound1" class="sound" type="button" aria-hidden="true"><i class="bi bi-volume-up-fill"></i> Ouvir narração</button>
+                </div>
+                <p>
+                    O Sistema SiMOn centraliza seus dados em um aplicativo onde o usuário final consegue analisar e gerar relatórios em tempo real, 
+                    o mesmo permite a análise e geração de dados que, quando combinados, podem criar insights valiosos para as áreas que 
+                    tratam informações relacionadas à eficiência.
+                </p>
+                <p>
+                    A interface do sistema é bastante simplificada e intuitiva. Ao abrir o programa, o usuário se depara com a tela de login do sistema:
+                </p>
+                <img src="./img/login_elipse.png">
+                <p>
+                    Para a geração de relatórios, e análise dos pilares do OEE, não se faz necessário o uso das credenciais do sistema, 
+                    então o usuário pode clicar <i>Enter </i> duas vezes para ir à tela principal como visualizador.
+                </p>
+                <p>
+                    Na tela principal do Elipse é possível encontrar os itens necessários para geração de relatórios e verificação das 
+                    máquinas existentes com SiMOn 1.0 e SiMOn 2.0
+                </p>
+                <img src="./img/capa_elipse_usuario.png">
+                <h3>
+                    1. Gerenciador
+                </h3>
+                <p>
+                    A tela de gerenciador é responsável por identificar as máquinas de cada fábrica e setor, e o status de cada uma delas:
+                </p>
+                <img src="./img/maquinas_elipse.png">
+                <p>
+                    No Elipse, as cores seguem um padrão que representa o status de cada uma, a tabela a seguir exemplifica cada uma das cores e suas legendas:
+                </p>
+                <img src="./img/legendas_maquinas_elipse.png">
+                <p>
+                    Clicando duas vezes em uma máquina, o programa abre um pop-up com os detalhes sobre o respectivo equipamento, no mesmo podemos verificar o programa, 
+                    documento e produto que está sendo trabalhado naquele momento na máquina, assim como o código da cor, a quantidade de pares produzidos e a produzir, 
+                    além dos percentuais e tempos de ciclo. O ip de cada máquina também é exibido, o tipo e a descrição de cada equipamento para eventuais necessidades de consulta.
+                </p>
+                <img src="./img/detalhes_maquinas_elipse.png">
+                <p>
+                    Além do que já foi citado, a janela exibe três botões na parte inferior que leva o usuário para outras telas, gráficos, produção e parâmetros.
+                </p>
+            </section>
+            <hr>
+            <section id="section3">
                 <div id="title_section">
                     <h1>Arquitetura de Dados</h1>
                     <button id="sound1" class="sound" type="button" aria-hidden="true"><i class="bi bi-volume-up-fill"></i> Ouvir narração</button>
