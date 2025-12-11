@@ -244,7 +244,15 @@
                     1. Gerenciador
                 </h3>
                 <p>
-                    A tela de gerenciador é responsável por identificar as máquinas de cada fábrica e setor, e o status de cada uma delas:
+                    Ao clicar no ícone de gerenciador, o usuário é redirecionado para a tela principal 
+                    onde verá um mapa das unidades produtivas da <i>Grendene</i>, ao clicar duas vezes em uma cidade, 
+                    uma nova janela será aberta, permitindo ao usuário escolher uma fábrica e por conseguinte um setor:
+                </p>
+                <img src="./img/tela_mapa_elipse.png">
+                <img src="./img/fabricas_elipse.png">
+                <img src="./img/setores_elipse.png">
+                <p>
+                    Após seleção é possível identificar as máquinas de cada fábrica e setor, e o status de cada uma delas:
                 </p>
                 <img src="./img/maquinas_elipse.png">
                 <p>
@@ -260,6 +268,121 @@
                 <p>
                     Além do que já foi citado, a janela exibe três botões na parte inferior que leva o usuário para outras telas, gráficos, produção e parâmetros.
                 </p>
+                <h4>1.1 Gráficos</h4>
+                <img src="./img/gráficos_elipse.png">
+                <p>
+                    A tela de gráficos exibe os dados em tempo real da máquina selecionada, 
+                    nela é possível verificar os pilares do OEE, disponibilidade, performance e qualidade, 
+                    além do OEE total da máquina. Cada pilar exibe o percentual atual e o tempo produtivo e improdutivo,
+                    assim como as perdas de qualidade e disponibilidade e os índices de performance.
+                </p>
+                <h4>1.2 Produção</h4>
+                <img src="./img/produção_elipse.png">
+                <p>
+                    A tela de produção exibe os dados de produção da máquina selecionada, 
+                    nela é possível verificar a quantidade produzida, a quantidade planejada, 
+                    o tempo restante para o término do lote, além de gráficos que mostram a produção ao longo do tempo.
+                </p>
+                <p class="alert">
+                    Observação: Os dados exibidos na tela de produção poderão sofrer diferenças quando comparado ao status real 
+                    de produção devido a não manutenção dessa tela dentro do SiMOn Elipse.
+                </p>
+                <h4>1.3 Parâmetros</h4>
+                <img src="./img/parâmetros_elipse.png">
+                <p>
+                    A tela de parâmetros exibe as configurações de eficiência da máquina selecionada, 
+                    nela é possível verificar quais percentuais ótimos, bons e ruins estão configurados para cada pilar do OEE, 
+                    além do horário de funcinamento padrão do setor.
+                </p>
+                <p class="alert">
+                    Observação: A opção de envio de email automático não está disponível para o usuário final, 
+                    sendo assim, qualquer configuração feita nessa tela não surtirá efeito algum.
+                </p>
+                <h4>1.4 Últimos 30 ciclos</h4>
+                <img src="./img/ultimos_ciclos_elipse.png">
+                <img src="./img/30ciclos_elipse.png">
+                <p>
+                    A tela de últimos 30 ciclos exibe os dados dos últimos 30 ciclos da máquina selecionada, 
+                    nela é possível verificar o tempo de ciclo planejado e o tempo ciclo real, 
+                    além de gráficos que mostram a variação do tempo de ciclo ao longo dos últimos 30 ciclos.
+                </p>
+                <h3>2. Relatórios</h3>
+                <p>
+                    No SiMOn Elipse o usuário final tem acesso a diversos relatórios que podem ser gerados para análise dos dados coletados pelo sistema,
+                    desde relatórios simples de produção até relatórios mais complexos que envolvem todos os pilares do OEE. Na tela principal é possível
+                    encontrar 8 opções de relatórios:
+                </p>
+                <img src="./img/capa_elipse_usuario.png">
+                <h4>2.1 Relatório simples</h4>
+                <p>
+                    O relatório simples permite que o usuário gere um arquivo CSV com os dados de apenas uma fábrica por vez, a tela segue um padrão simples 
+                    onde o usuário seleciona a fábrica, o setor, a máquina e o período desejado para análise.
+                </p>
+                <img src="./img/relatorio_simples_elipse.png">
+                <p>
+                    O Elipse dispõe ao usuário uma gama de filtros de períodos para facilitar a geração dos relatórios, entre eles estão:
+                </p>
+                <ul>
+                    <li>Status Atual</li>
+                    <li>Dia Anterior</li>
+                    <li>Meses do ano</li>
+                    <li>Período personalizado</li>
+                </ul>
+                <img src="/img/opções_datas_elipse.png">
+                <p>
+                    Com o relatório simples é possível extrair dados de produção, disponibilidade, performance, qualidade e OEE
+                </p>
+                <h4>2.1.1 OEE Geral</h4>
+                <p>
+                    Clicando duas vezes na opção OEE Geral, o usuário é redirecionado para a tela de geração do relatório específico do OEE.
+                </p>
+                <p>
+                    O relatório de OEE geral extrai os dados consolidados dos pilares do OEE para o período selecionado, 
+                    exibindo os percentuais de disponibilidade, performance, qualidade e OEE total conforme a escolha do usuário,
+                    o usuário também poderá selecionar uma única máquina para gerar um relatório mais específico.
+                </p>
+                <img src="./img/relatorio_simples_oeegeral_elipse.png">
+                <p>
+                    Clicando no ícone do Excel, o relatório é gerado e salvo na pasta padrão de downloads de relatórios do Elipse.
+                </p>
+                <p class="code">
+                    C:\Users\{usuário de rede}\Desktop\Relatórios SiMOn
+                </p>
+                <p>  
+                    O relatório é gerado em formato CSV, permitindo ao usuário analisar os dados em ferramentas como Excel, 
+                    Power BI ou outras plataformas de análise de dados.
+                </p>
+                <p class="alert">
+                    Observação: Apesar do ícone de PDF estar disponível na tela de geração de relatórios, 
+                    o mesmo não está funcional no SiMOn Elipse, sendo assim, o usuário só conseguirá gerar relatórios no formato CSV.
+                </p>
+                <h4>2.1.2 Tempo Útil</h4>
+                <p>
+                    Clicando na opção Tempo Útil, o usuário poderá gerar relatórios de tempos improdutivos (sem peso), tanto percentuais como horas, 
+                    além disso o usuário poderá escolher gerar relatórios de um motivo específico.
+                </p>
+                <img src="./img/relatorio_simples_tempoutil_elipse.png">
+                <h4>2.1.3 Disponibilidade</h4>
+                <p>
+                    Clicando na opção perdas de disponibilidade, o usuário poderá gerar relatórios de paradas (com peso), 
+                    tanto percentuais como horas e quantidade de paradas, além disso o usuário poderá escolher 
+                    gerar relatórios de um motivo específico.
+                </p>
+                <img src="./img/relatorio_simples_disponibilidade_elipse.png">
+                <h4>2.1.4 Performance</h4>
+                <p>
+                    Clicando na opção perdas de performance, o usuário poderá gerar relatórios de ganho de ciclo, 
+                    perda de ciclo e quadrados vazios ou moldes isolados, tanto percentuais como horas e quantidade de ciclos,
+                    além disso o usuário poderá escolher gerar relatórios de um motivo específico.
+                </p>
+                <img src="./img/relatorio_simples_performance_elipse.png">
+                <h4>2.1.5 Qualidade</h4>
+                <p>
+                    Clicando na opção perdas de qualidade, o usuário poderá gerar relatórios de paradas (com peso), 
+                    tanto percentuais como horas e quantidade de perdas, além disso o usuário poderá escolher 
+                    gerar relatórios de um motivo específico.
+                </p>
+                <img src="./img/relatorio_simples_qualidade_elipse.png">
             </section>
             <hr>
             <section id="section3">
