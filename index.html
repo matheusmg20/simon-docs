@@ -42,8 +42,9 @@
             </div>
             <ul>
                 <li><a href="#section1" class="ativo"><h4>1.</h4><span>Sobre o SiMOn</span></a></li>
-                <li><a href="#section2" class="ativo"><h4>2.</h4><span>Elipse</span></a></li>
-                <li><a href="#section3" class="ativo"><h4>3.</h4><span>Arquitetura</span></a></li>
+                <li><a href="#section2" class="ativo"><h4>2.</h4><span>SiMOn 2.0</span></a></li>
+                <li><a href="#section3" class="ativo"><h4>3.</h4><span>Elipse</span></a></li>
+                <li><a href="#section4" class="ativo"><h4>4.</h4><span>Arquitetura</span></a></li>
             </ul>
         </aside>
 
@@ -218,6 +219,148 @@
             </section>
             <hr>
             <section id="section2">
+                <div id="title_section">
+                    <h1>SiMOn 2.0</h1>
+                    <button id="sound1" class="sound" type="button" aria-hidden="true"><i class="bi bi-volume-up-fill"></i> Ouvir narração</button>
+                </div>
+                <p>
+                    O SiMOn 2.0 é a evolução do sistema de monitoramento online da Grendene, trazendo melhorias significativas em relação à versão anterior. 
+                    Com uma arquitetura mais robusta e escalável, o SiMOn 2.0 oferece maior confiabilidade na coleta e processamento dos dados, 
+                    além de uma interface mais intuitiva e amigável para os usuários finais.
+                </p>
+                <p>
+                    Essa interface fica diretamente aos cuidados da produção, onde os operadores realizam os apontamentos e 
+                    indicam ao sistema os principais gargalos durante o processo produtivo.
+                </p>
+                <h1>
+                    Inteface do sistema
+                </h1>
+                <p>
+                    A interface do SiMOn 2.0 foi desenvolvida com foco na necessidade de cada processo produtivo, 
+                    atualmente o sistema compõe grande parte dos equipamentos da <i>Grendene S/A</i>, desde o processo de injeção de termoplasticos
+                    até o processo de embalamento final dos produtos.
+                </p>
+                <p>
+                    Devido a essa diversidade de processos, o SiMOn 2.0 conta com diferentes interfaces 
+                    para cada tipo de departamento produtivo, cada uma delas desenvolvida para atender 
+                    as necessidades específicas de cada etapa.
+                </p>
+                <h1>
+                    SiMOn 2.0 - Injeção
+                </h1>
+                <p>
+                    A interface do SiMOn 2.0 nas injeções da <i>Grendene</i> 
+                    foi desenvolvida para facilitar o apontamento dos operadores.
+                </p>
+                <p>
+                    A tela inicial do sistema exibe as principais informações da máquina,
+                    como o programa que está rodando, o documento, o produto, a cor, além dos dados de 
+                    eficiência e um destque maior aos ciclos que a máquina está realizando
+                </p>
+                <img src="./img/simon_2.0_full_tela_inicial.jpg">
+                <p>
+                    Na parte superior, é possível encontrar alguns botões de navegação, junto da logo do simon e o nome do equipamento.
+                    À esquerda, temos o botão de <i>Menu</i>, que abre uma nova tela para cadastro de operadores e líderes, além de programa/documento e ajuste no tempo máquina.
+                </p>
+                <img src="./img/operadores_simon_full.png">
+                <h3>Identificação operador</h3>
+                <p>
+                    Na identificação do operador, o usuário deve ler o crachá no leitor <i>RFID</i>, e o mesmo irá digitar automaticamente o código do crachá do usuário, 
+                    ou se preferir o usuário poderá digitar o código usando o teclado do SiMOn.
+                </p>
+                <img src="./img/credenciais_operador_simon_full.png">
+                <h3>
+                    Identificação lideranças
+                </h3>
+                <p>
+                    Na identificação das lideranças o usuário deverá selecionar o preparador e lider técnico da máquina, 
+                    dentre as opções estarão apenas colaboradores cadastrados no centro de custo da fábrica a fim de facilitar a busca, 
+                    o usuário pode optar pela digitação do crachá do gestor caso não encontre o mesmo na lista.
+                </p>
+                <img src="./img/lideranças_simon_full.png">
+                <p>
+                    Após a identificação do operador e das lideranças, o usuário deve cadastrar qual o programa e 
+                    documento que está rodando na máquina. O SiMOn 2.0 tem integração com outros sistemas <i>Grendene</i>, 
+                    como <i>TOTVS</i> e <i>PREACTOR</i>, através disso o sistema consegue identificar quais são os programas 
+                    disponíveis para produzir em cada uma das máquinas, quando o usuário abre a opção <i>Lista de programas</i>,
+                    ele se depara com um grid de itens para escolher o programa e documento correto.
+                </p>
+                <p>
+                    Nessa tela ele verá a carga horária de produção de cada item, e poderá digitar o código caso não encontre na lista de programas
+                </p>
+                <img src="./img/prog_doc_simon_full.png">
+                <h3>
+                    Ajuste tempo máquina
+                </h3>
+                <p>
+                    Na opção de ajuste do tempo máquina, o usuário poderá alterar o tempo padrão da máquina, 
+                    caso o mesmo esteja diferente do que foi configurado no sistema.
+                </p>
+                <img src="./img/ajuste_tempo_maquina_full.png">
+                <p class="alert">
+                    Observação: Essa alteração deve ser feita pelo líder ou supervisor do setor, 
+                    e o tempo ajustado deve ser o mais próximo possível do tempo padrão da máquina.
+                </p>
+                <p>
+                    Voltando para a tela inicial, na parte superior direita o usuário tem a disposição um relógio
+                    para acompanhar o horário atual e a data, para facilitar durante os apontamentos.
+                </p>
+                <h3>Configurações</h3>
+                <p>
+                    A esquerda do relógio, o usuário encontra o botão de <strong>Configurações</strong>, onde será possível verificar as
+                    informações de status das máquinas, IP, versão do sistema, além de opções para reiniciar o 
+                    sistema ou desligar a máquina.
+                </p>
+                <p>
+                    Também é possível verificar as entradas e saídas de sensores ligados ao CLP da máquina, tais como o sensor 
+                    de ciclos e saídas para as luzes do andon. Cada sinal recebido ou enviado pelo SiMOn é identificado através 
+                    dos círculos verdes que piscam conforme o sinal.
+                </p>
+                <img src="./img/configurações_simon_full.png">
+                <h3>Registro de mudanças</h3>
+                <p>
+                    Também na parte superior direita, o usuário encontra o botão de <strong>Atualizações</strong>, 
+                    onde poderá encontrar os registros de atualizações do sistema, as últimas alterações feitas pelo time de T.I.
+                </p>
+                <img src="./img/registro_mudanças_simon_full.png">
+                <h3>
+                    indicativo de produção
+                </h3>
+                <p>
+                    O SiMOn 2.0 conta com uma barra de indicativo de produção, quando a máquina está produzindo, 
+                    a mesma toma uma coloração verde, quando a máquina está com uma parada, a mesma fica com a cor vermelha, 
+                    e quando a parada é do tipo apoio, a mesma fica azul. Tudo isso para dar um indicativo visual do 
+                    status da máquina.
+                </p>
+                <img src="./img/indicativo_produção_simon_full.png">
+                <h3>
+                    Informações de cadastros
+                </h3>
+                <p>
+                    Abaixo da tarja indicativa, o usuário encontra as informações de cadastros, como o operador, preparador, 
+                    líder técnico, programa e documento, além do volume previsto e realizado da máquina,
+                    e da ineficiência prevista e realizada.
+                </p>
+                <img src="./img/informações_cadastrais_simon_full.png">
+                <h3>
+                    Etapas de confirmação da carga
+                </h3>
+                <p>
+                    Dentro das informações de programa e documento, existe um ícone de etapas, onde é possível identificar as etapas 
+                    que o usuário teve desde a abertura da tela até a confirmação da carga.
+                </p>
+                <img src="./img/etapas_confirmação_carga_simon_full.png">
+                <h3>
+                    Dashboard de eficiência
+                </h3>
+                <p>
+                    Abaixo das informações de cadastros, o usuário encontra o dashboard de eficiência, 
+                    onde é possível acompanhar em tempo real os pilares do OEE, disponibilidade, 
+                    performance, qualidade e OEE total.
+                </p>
+            </section>
+            <hr>
+            <section id="section3">
                 <div id="title_section">
                     <h1>SiMOn Elipse</h1>
                     <button id="sound1" class="sound" type="button" aria-hidden="true"><i class="bi bi-volume-up-fill"></i> Ouvir narração</button>
@@ -445,7 +588,7 @@
                 </p>
             </section>
             <hr>
-            <section id="section3">
+            <section id="section4">
                 <div id="title_section">
                     <h1>Arquitetura de Dados</h1>
                     <button id="sound1" class="sound" type="button" aria-hidden="true"><i class="bi bi-volume-up-fill"></i> Ouvir narração</button>
