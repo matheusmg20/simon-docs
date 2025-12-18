@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href=".svg" type="svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/paragraph.css">
+    <link rel="stylesheet" href="css/window_apps.css">
     <title>SiMOn Docs</title>
 </head>
 <body> 
@@ -20,16 +21,44 @@
             </div>
         </div>
         <div class="rigth">
-            <div class="search">
-                <input type="text" placeholder="Pesquise por algum item"/>
-                <i class="bi bi-search"></i>
-            </div>
-            <div class="notification">
-                <i class="bi bi-bell"></i>
-                <span id="new-notification">.</span>
-            </div>
             <div class="apps">
                 <span class="material-symbols-outlined">apps</span>
+            </div>
+            <div class="window_apps">
+                <ul>
+                    <li>
+                        <a href="http://10.2.24.20/">
+                            <div class="icon_window_apps">
+                                <img src="./img/apps/bar-chart-line-fill.svg" id="analytics">
+                                <span>SiMOn Analytics</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon_window_apps">
+                                <img src="./img/apps/envelope-open-fill.svg" id="sends">
+                                <span>SiMOn Sends</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon_window_apps">
+                                <img src="./img/apps/file-earmark-text-fill.svg" id="docs">
+                                <span>SiMOn Docs</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon_window_apps">
+                                <img src="./img/apps/laptop.svg" id="cadastros">
+                                <span>SiMOn Cadastro</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -44,7 +73,8 @@
                 <li><a href="#section1" class="ativo"><h4>1.</h4><span>Sobre o SiMOn</span></a></li>
                 <li><a href="#section2" class="ativo"><h4>2.</h4><span>SiMOn 2.0</span></a></li>
                 <li><a href="#section3" class="ativo"><h4>3.</h4><span>Elipse</span></a></li>
-                <li><a href="#section4" class="ativo"><h4>4.</h4><span>Arquitetura</span></a></li>
+                <li><a href="#section4" class="ativo"><h4>4.</h4><span>Cadastros</span></a></li>
+                <li><a href="#section5" class="ativo"><h4>5.</h4><span>Arquitetura</span></a></li>
             </ul>
         </aside>
 
@@ -245,9 +275,9 @@
                     para cada tipo de departamento produtivo, cada uma delas desenvolvida para atender 
                     as necessidades específicas de cada etapa.
                 </p>
-                <h1>
+                <h2>
                     SiMOn 2.0 - Injeção
-                </h1>
+                </h2>
                 <p>
                     A interface do SiMOn 2.0 nas injeções da <i>Grendene</i> 
                     foi desenvolvida para facilitar o apontamento dos operadores.
@@ -356,7 +386,96 @@
                 <p>
                     Abaixo das informações de cadastros, o usuário encontra o dashboard de eficiência, 
                     onde é possível acompanhar em tempo real os pilares do OEE, disponibilidade, 
-                    performance, qualidade e OEE total.
+                    performance, qualidade, setups, ciclos e OEE total.
+                </p>
+                <img src="./img/dashboard_eficiência_simon_full.png">
+                <h3>
+                    Menu de navegação
+                </h3>
+                <p>
+                    Ao final da tela inicial, o usuário encontra o menu de navegação,
+                    onde é possível navegar entre as páginas do SiMOn 2.0, sendo elas:
+                </p>
+                <img src="./img/menu_navegação_simon_full.png">
+                <h3>
+                    1. Tela de <u>Produtos</u>
+                </h3>
+                <p>
+                    Na tela de produtos, o usuário pode visualizar os dados do produto que está rodando em tempo real, o OEE e os pilares do produto.
+                </p>
+                <img src="./img/página_produtos_simon_full.png">
+                <p class="alert">
+                    Observação: Os dados exibidos na tela de produtos independem do turno, ou seja, se o mesmo produto for rodado em diferentes turnos, 
+                    o dado será o mesmo, pois o SiMOn 2.0 trata os dados de produto de forma consolidada.
+                </p>
+                <h3>
+                    2. Tela de <u>Turno</u>
+                </h3>
+                <p>
+                    Na tela de turno, o usuário pode visualizar os dados do turno em questão rodando em tempo real, o OEE e os pilares do produto.
+                </p>
+                <img src="./img/capa_simon.png">
+                <p class="alert">
+                    Observação: Os dados exibidos na tela de mudam conforme os horários cadastrados de início e fim de cada turno, ou seja, sempre que o turno iniciar, 
+                    a tela de produtos deve estar com o indicador de OEE em 100% e sem perdas nos pilares.
+                </p>
+                <h3>
+                    3. Tela de <u>Amostra</u>
+                </h3>
+                <p>
+                    A tela de amostra é utilizada para dar ao usuário uma prévia de como é o modelo do produto que está sendo produzido na máquina, isso é importante 
+                    para fazer comparativos entre o que está sendo produzido e o que foi planejado pelo time de design da empresa.
+                </p>
+                <img src="./img/tela_amostras_full_simon.png">
+                <p class="alert">
+                    O usuário também consegue rotacionar o produto e dar zoom ao colocar o mouse sobre a imagem.
+                </p>
+                <h3>
+                    3. Tela de <u>PLM</u>
+                </h3>
+                <p>
+                    A tela de PLM é a tela onde é possível o usuário visualizar todas as operações do processo e as especificações do produto, tais como:
+                </p>
+                <ul>
+                    <li>Numeração do componente</li>
+                    <li>Referencia de matriz</li>
+                    <li>Quantidade de matriz</li>
+                    <li>Recalque</li>
+                    <li>Dosagem</li>
+                    <li>Detalhamento do ciclo</li>
+                    <li>Tempo de ciclo</li>
+                </ul>
+                <img src="./img/tela_plm_full_simon.png">
+                <h3>
+                    3. Tela de <u>Qualidade 2.0</u>
+                </h3>
+                <p>
+                    A tela do Qualidade 2.0, mostra os dados que a equipe de Qualidade registrou durante as auditorias de qualidade que são feitas diariamente nas máquinas.
+                </p>
+                <img src="./img/tela_qualidade_2.0_full_simon.png">
+                <p class="alert">
+                    Observação: Os dados do Qualidade 2.0 não necessariamente serão iguais aos dados do pilar de qualidade do SiMOn 2.0, 
+                    pois os dados do time de qualidade só correspondem ao período da auditoria, e não ao período total de produção da máquina.
+                </p>
+                <h3>
+                    3. Tela de <u>Análise</u>
+                </h3>
+                <p>
+                    A tela de análise é a tela onde o usuário pode visualizar os dados históricos de produção da máquina, 
+                    além de gráficos de disponibilidade, performance, qualidade e OEE.
+                </p>
+                <img src="./img/tela_análise_full_simon.png">
+                <h3>
+                    3. Tela de <u>Alertas</u>
+                </h3>
+                <p>
+                    A tela de alertas trás um histórico de alertas que foram registrados na máquina,
+                    a tela faz separação entre alertas amarelos e vermelhos, além de mostrar o tempo de cada alerta e o motivo.
+                </p>
+                <img src="./img/tela_alertas_full_simon.png">
+                <p class="alert">
+                    Observação: Os alertas são registrados automaticamente através de parâmetros configurados no SiMOn 2.0,
+                    usando parâmetros imputados no <a href="#"><u><i>SiMOn Cadastros.</i></u></a>
                 </p>
             </section>
             <hr>
@@ -563,12 +682,23 @@
                     a tela segue o mesmo padrão das anteriores.
                 </p>
                 <img src="./img/relatorio_múltiplo_elipse.png">
-                <h4>2.5 Relatório andon & relatório comparativo andon</h4>
+                <h4>2.5 Relatório performance</h4>
+                <p>
+                    O relatório de performance permite que o usuário gere um arquivo CSV com 
+                    os dados relacionados à performance e tempo útil, 
+                    a tela segue o mesmo padrão das anteriores.                    
+                </p>
+                <p>
+                    Com esse relatório é possível extrair dados de ganho de ciclo, perda de ciclo e quadrados vazios ou moldes isolados,
+                    tanto percentuais como horas e quantidade de ciclos.
+                </p>
+                <img src="./img/relatorio_performance_elipse.png">
+                <h4>2.6 Relatório andon & relatório comparativo andon</h4>
                 <p class="alert">
                     Observação: Os relatórios andon e comparativo andon foram desabilitados para o usuário final no SiMOn Elipse,
                     por tanto os mesmos não estarão disponíveis para geração de relatórios.
                 </p>
-                <h4>2.6 Relatório de produtos</h4>
+                <h4>2.7 Relatório de produtos</h4>
                 <p>
                     O relatório de produtos permite que o usuário gere um arquivo CSV com 
                     os dados de produção relacionados a produtos específicos, 
@@ -590,6 +720,13 @@
             <hr>
             <section id="section4">
                 <div id="title_section">
+                    <h1>SiMOn Cadastros</h1>
+                    <button id="sound1" class="sound" type="button" aria-hidden="true"><i class="bi bi-volume-up-fill"></i> Ouvir narração</button>
+                </div>
+            </section>
+            <hr>
+            <section id="section5">
+                <div id="title_section">
                     <h1>Arquitetura de Dados</h1>
                     <button id="sound1" class="sound" type="button" aria-hidden="true"><i class="bi bi-volume-up-fill"></i> Ouvir narração</button>
                 </div>
@@ -610,5 +747,6 @@
     <script src="./js/item_ativo.js"></script>
     <script src="./js/responsive_sidebar.js"></script>
     <script src="./js/narracao.js"></script>
+    <script src="./js/apps.js"></script>
 </body>
 </html>
